@@ -11,6 +11,10 @@ function App() {
     <div className='app'>
       <h2>React function passed from parent to children a prop</h2>
       <div style={{ backgroundColor : `${color}` }}>App</div>
+      {/* can pass state function also  */}
+      {/* <Callback getcolor={setcolor}/> */}
+
+      {/* can pass normal function also  */}
       <Callback getcolor={getcolor}/>
     </div>
   )

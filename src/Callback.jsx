@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import './App.css'
 function Callback({getcolor}) {
-    const[inp , setinp] = useState(null)
+    const[inp , setinp] = useState("")
     const handlechange =(e)=> 
     {
-      console.log(e.target.value);
-      
-        const {value} = e.target
-        setinp(value)
-        getcolor(value)
+        setinp(e.target.value)
+        getcolor(e.target.value)
     }
   return (
    
