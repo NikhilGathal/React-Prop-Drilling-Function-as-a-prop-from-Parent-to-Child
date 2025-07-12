@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
 import './App.css'
-import Callback from './callback'
+import Callback from './Callback'
+
 function App() {
   const [color, setcolor] = useState(null)
   const getcolor = (inp) => {
